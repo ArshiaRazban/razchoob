@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزچوب - پنل ادمین</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55129f18df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="logo/logonomy-kaver.jpg" alt="لوگو رزچوب">
+            <h1>رزچوب - وسایل مدرن از چوب</h1>
+        </div>
+        <button class="hamburger" aria-label="باز کردن منو">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-menu">
+            <button class="close-menu" aria-label="بستن منو">✕</button>
+            <ul>
+                <li><a href="index.html"> <i class="fa-solid fa-house"></i> خانه</a></li>
+                <li><a href="admin panel.html"> <i class="fa-solid fa-user-tie"></i> پنل ادمین</a></li>
+                <li><a href="about.html"> <i class="fa-solid fa-circle-question"></i> درباره ما</a></li>
+                <!-- <li><a href="news.html"> <i class="fa-solid fa-newspaper"></i> اخبار</a></li> -->
+                <li><a href="contact.html"> <i class="fa-solid fa-comment-dots"></i> تماس با ما</a></li>
+                <li><a href="products.html"> <i class="fa-solid fa-store"></i> محصولات</a></li>
+                <li><a href="cart.html"> <i class="fa-solid fa-basket-shopping"></i> سبد خرید (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <br><br>
+    <hr><br><hr>
+
+    <!-- بخش پیام‌ها -->
+    <section class="admin-messages">
+        <h2>پیام‌های مشتریان</h2>
+        <div id="message-list" class="message-list"></div>
+    </section>
+
+    <hr><br><hr>
+
+    <!-- بخش سفارش‌ها -->
+    <section class="admin-orders">
+        <h2>سفارش‌ها</h2>
+        <div id="order-list" class="order-list"></div>
+    </section>
+
+    <hr><br><hr>
+    
+    <!-- بخش افزودن محصول -->
+    <section class="admin-add-product">
+        <h2>افزودن محصول جدید</h2>
+        <form id="add-product-form" class="add-product-form">
+            <input type="text" id="product-name" placeholder="نام محصول" required>
+            <input type="number" id="product-price" placeholder="قیمت (تومان)" required>
+            <textarea id="product-desc" placeholder="توضیحات محصول" required></textarea>
+            <input type="text" id="product-image" placeholder="لینک تصویر محصول" required>
+            <button type="submit">افزودن محصول</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 رزچوب. همه حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
