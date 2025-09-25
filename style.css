@@ -1,3 +1,51 @@
+#contact-form button {
+    background: #222 !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 2.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #bbb2;
+    text-decoration: none;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+#contact-form button:hover {
+    background: #888 !important;
+}
+#customer-form button, #checkout {
+    background: #222 !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 2.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #bbb2;
+    text-decoration: none;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+#customer-form button:hover, #checkout:hover {
+    background: #888 !important;
+}
+.admin-product-card button, #add-product-form button {
+    background: #222 !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 2.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #bbb2;
+    text-decoration: none;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+.admin-product-card button:hover, #add-product-form button:hover {
+    background: #888 !important;
+}
 /* دکمه ثبت سفارش */
 #checkout {
     background: #222 !important;
@@ -303,21 +351,20 @@ section {
     border-color: #bbb;
 }
 .product-card button {
-    background: #eaeaea;
-    color: #222;
+    background: #222 !important;
+    color: #fff !important;
     padding: 0.6rem 1rem;
     border: none;
     border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
     font-size: 1rem;
+    font-weight: 500;
     box-shadow: 0 1px 4px #bbb2;
-    transition: background 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    transition: background 0.2s;
+    cursor: pointer;
 }
 .product-card button:hover {
-    background: #bbb;
-    color: #222;
-    box-shadow: 0 2px 8px #bbb2;
+    background: #888 !important;
 }
 
 .news-item { 
