@@ -62,13 +62,13 @@
         <nav class="nav-menu">
             <button class="close-menu" aria-label="بستن منو">✕</button>
             <ul>
-                <li><a href="index.html"> <i class="fa-solid fa-house"></i> خانه</a></li>
-                <li><a href="admin panel.html"> <i class="fa-solid fa-user-tie"></i> پنل ادمین</a></li>
-                <li><a href="about.html"> <i class="fa-solid fa-circle-question"></i> درباره ما</a></li>
+                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> خانه</a></li>
+                <li><a href="admin panel.html"><i class="fa-solid fa-user-tie"></i> پنل ادمین</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-circle-question"></i> درباره ما</a></li>
                 <!-- <li><a href="news.html"> <i class="fa-solid fa-newspaper"></i> اخبار</a></li> -->
-                <li><a href="contact.html"> <i class="fa-solid fa-comment-dots"></i> تماس با ما</a></li>
-                <li><a href="products.html"> <i class="fa-solid fa-store"></i> محصولات</a></li>
-                <li><a href="cart.html"> <i class="fa-solid fa-basket-shopping"></i> سبد خرید (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-comment-dots"></i> تماس با ما</a></li>
+                <li><a href="products.html"><i class="fa-solid fa-store"></i> محصولات</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-basket-shopping"></i> سبد خرید (<span id="cart-count">0</span>)</a></li>
             </ul>
         </nav>
     </header>
@@ -85,36 +85,52 @@
             <div class="news-item" style="background:#f7f7f7; border-radius:10px; box-shadow:0 1px 4px #bbb2; padding:1.2rem; flex:1 1 260px; min-width:220px;">
                 <h3 style="font-size:1.1rem; color:#222; font-weight:500; margin-bottom:0.7rem;"><i class="fa-solid fa-bolt" style="color:#888; margin-left:0.5em;"></i> معرفی محصول جدید</h3>
                 <p style="color:#555; margin-bottom:0.7rem;">ما محصول جدیدی از چوب بلوط معرفی کردیم. جزئیات بیشتر در بخش اخبار.</p>
-                <a href="news.html" style="color:#222; font-weight:600; text-decoration:underline;">بخوانید</a>
+                <a href="news.html" style="color:#222; font-weight:600; text-decoration:underline;">بیشتر بخوانید</a>
             </div>
             <!-- خبرهای بیشتر را اینجا اضافه کنید -->
         </div>
     </section>
 
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="active"><i class="fa-solid fa-house"></i><span>خانه</span></a>
+        <a href="admin panel.html"><i class="fa-solid fa-user-tie"></i><span>ادمین</span></a>
+        <a href="about.html"><i class="fa-solid fa-circle-question"></i><span>درباره</span></a>
+        <a href="contact.html"><i class="fa-solid fa-comment-dots"></i><span>تماس</span></a>
+        <a href="products.html"><i class="fa-solid fa-store"></i><span>محصولات</span></a>
+        <a href="cart.html"><i class="fa-solid fa-basket-shopping"></i><span>سبد خرید</span></a>
+    </nav>
+
     <!-- فوتر مدرن -->
     <footer>
-        <div class="footer-section">
-            <h3>درباره رزچوب</h3>
-            <p>رزچوب با هدف ارائه محصولات مدرن و دست‌ساز چوبی برای خانه و محل کار شما ایجاد شده است.</p>
-        </div>
-        <div class="footer-section">
-            <h3>لینک‌های مفید</h3>
+    <div class="footer-section">
+        <h3>درباره رزچوب</h3>
+        <p>رزچوب با هدف ارائه محصولات مدرن و دست‌ساز چوبی برای خانه و محل کار شما ایجاد شده است.</p>
+    </div>
+    <div class="footer-section footer-links-columns">
+        <h3>لینک‌های مفید</h3>
+        <div class="footer-links-row">
             <ul>
-                <li><a href="about.html">درباره ما</a></li>
-                <li><a href="contact.html">تماس با ما</a></li>
-                <li><a href="products.html">محصولات</a></li>
+                <li><a href="index.html"> <i class="fa-solid fa-house"></i> خانه</a></li>
+                <li><a href="admin panel.html"> <i class="fa-solid fa-user-tie"></i> پنل ادمین</a></li>
+                <li><a href="about.html"> <i class="fa-solid fa-circle-question"></i> درباره ما</a></li>
+            </ul>
+            <ul>
+                <li><a href="contact.html"> <i class="fa-solid fa-comment-dots"></i> تماس با ما</a></li>
+                <li><a href="products.html"> <i class="fa-solid fa-store"></i> محصولات</a></li>
+                <li><a href="cart.html"> <i class="fa-solid fa-basket-shopping"></i> سبد خرید (<span id="cart-count">0</span>)</a></li>
             </ul>
         </div>
-        <div class="footer-section">
-            <h3>ما را دنبال کنید</h3>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
+    </div>
+    <div class="footer-section">
+        <h3>ما را دنبال کنید</h3>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-        <p>&copy; 2025 رزچوب | طراحی و توسعه با ❤️</p>
-    </footer>
+    </div>
+    <p>&copy; 2025 رزچوب</p>
+</footer>
 
     <script src="script.js"></script>
 </body>

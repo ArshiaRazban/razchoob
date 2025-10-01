@@ -9,23 +9,23 @@
 </head>
 <body>
 
-    <!-- هدر مدرن -->
-
     <!-- Modal for product details -->
     <div id="product-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.25);z-index:999;align-items:center;justify-content:center;">
         <div id="modal-card" style="background:#fff;border-radius:16px;box-shadow:0 4px 24px #bbb2;max-width:350px;width:90vw;padding:2rem 1.2rem;text-align:center;position:relative;">
-                        <button id="close-modal" style="position:absolute;top:1rem;left:1rem;background:#fff;border:none;border-radius:50%;width:2.4rem;height:2.4rem;box-shadow:0 2px 8px #bbb2;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background 0.2s;">
-                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="11" cy="11" r="11" fill="#fff"/>
-                                    <path d="M7 7L15 15M15 7L7 15" stroke="#222" stroke-width="2.2" stroke-linecap="round"/>
-                                </svg>
-                        </button>
+            <button id="close-modal" style="position:absolute;top:1rem;left:1rem;background:#fff;border:none;border-radius:50%;width:2.4rem;height:2.4rem;box-shadow:0 2px 8px #bbb2;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background 0.2s;">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="11" fill="#fff"/>
+                    <path d="M7 7L15 15M15 7L7 15" stroke="#222" stroke-width="2.2" stroke-linecap="round"/>
+                </svg>
+            </button>
             <img id="modal-img" src="" alt="" style="width:100%;border-radius:12px;box-shadow:0 1px 8px #bbb2;margin-bottom:1rem;">
             <h3 id="modal-title" style="color:#222;font-size:1.2rem;font-weight:600;margin-bottom:0.7rem;"></h3>
             <p id="modal-price" style="color:#444;font-size:1rem;margin-bottom:0.7rem;"></p>
             <p id="modal-desc" style="color:#555;font-size:0.98rem;"></p>
         </div>
     </div>
+    
+    <!-- هدر مدرن -->
     <header>
         <div class="logo">
             <img src="logo/logonomy-kaver.jpg" alt="لوگو رزچوب">
@@ -39,15 +39,16 @@
         <nav class="nav-menu">
             <button class="close-menu" aria-label="بستن منو">✕</button>
             <ul>
-                <li><a href="index.html"> <i class="fa-solid fa-house"></i> خانه</a></li>
-                <li><a href="admin panel.html"> <i class="fa-solid fa-user-tie"></i> پنل ادمین</a></li>
-                <li><a href="about.html"> <i class="fa-solid fa-circle-question"></i> درباره ما</a></li>
-                <li><a href="contact.html"> <i class="fa-solid fa-comment-dots"></i> تماس با ما</a></li>
-                <li><a href="products.html"> <i class="fa-solid fa-store"></i> محصولات</a></li>
-                <li><a href="cart.html"> <i class="fa-solid fa-basket-shopping"></i> سبد خرید (<span id="cart-count">0</span>)</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> خانه</a></li>
+                <li><a href="admin panel.html"><i class="fa-solid fa-user-tie"></i> پنل ادمین</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-circle-question"></i> درباره ما</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-comment-dots"></i> تماس با ما</a></li>
+                <li><a href="products.html" class="active"><i class="fa-solid fa-store"></i> محصولات</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-basket-shopping"></i> سبد خرید (<span id="cart-count">0</span>)</a></li>
             </ul>
         </nav>
     </header>
+
 
     <h2 class="product-h2">محصولات</h2>
     <section id="products">
@@ -89,19 +90,36 @@
         </div>
     </section>
 
+    <!-- نوار پایین موبایل -->
+    <nav class="mobile-bottom-nav">
+        <a href="index.html"><i class="fa-solid fa-house"></i><span>خانه</span></a>
+        <a href="admin panel.html"><i class="fa-solid fa-user-tie"></i><span>ادمین</span></a>
+        <a href="about.html"><i class="fa-solid fa-circle-question"></i><span>درباره</span></a>
+        <a href="contact.html"><i class="fa-solid fa-comment-dots"></i><span>تماس</span></a>
+        <a href="products.html" class="active"><i class="fa-solid fa-store"></i><span>محصولات</span></a>
+        <a href="cart.html"><i class="fa-solid fa-basket-shopping"></i><span>سبد خرید</span></a>
+    </nav>
+
     <!-- فوتر مدرن -->
     <footer>
         <div class="footer-section">
             <h3>درباره رزچوب</h3>
             <p>رزچوب با هدف ارائه محصولات مدرن و دست‌ساز چوبی برای خانه و محل کار شما ایجاد شده است.</p>
         </div>
-        <div class="footer-section">
+        <div class="footer-section footer-links-columns">
             <h3>لینک‌های مفید</h3>
-            <ul>
-                <li><a href="about.html">درباره ما</a></li>
-                <li><a href="contact.html">تماس با ما</a></li>
-                <li><a href="products.html">محصولات</a></li>
-            </ul>
+            <div class="footer-links-row">
+                <ul>
+                    <li><a href="index.html"> <i class="fa-solid fa-house"></i> خانه</a></li>
+                    <li><a href="admin panel.html"> <i class="fa-solid fa-user-tie"></i> پنل ادمین</a></li>
+                    <li><a href="about.html"> <i class="fa-solid fa-circle-question"></i> درباره ما</a></li>
+                </ul>
+                <ul>
+                    <li><a href="contact.html"> <i class="fa-solid fa-comment-dots"></i> تماس با ما</a></li>
+                    <li><a href="products.html"> <i class="fa-solid fa-store"></i> محصولات</a></li>
+                    <li><a href="cart.html"> <i class="fa-solid fa-basket-shopping"></i> سبد خرید (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </div>
         </div>
         <div class="footer-section">
             <h3>ما را دنبال کنید</h3>
@@ -111,7 +129,7 @@
                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
-        <p>&copy; 2025 رزچوب | طراحی و توسعه با ❤️</p>
+        <p>&copy; 2025 رزچوب</p>
     </footer>
 
     <script src="script.js"></script>
